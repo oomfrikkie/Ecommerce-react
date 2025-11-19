@@ -2,17 +2,28 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import NavBar from './components/navBar';
+import SearchBar from './components/SearchBar';
+import Home from './pages/Home';
+import UserMenu from './components/UserMenu'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-     <div className="p-10 bg-red-500 text-white rounded-xl">
-  Hello
-</div>
+    <div className='flex flex-row items-center p-6 bg-orange-400 rounded-lg'>
+      <NavBar />
+      <SearchBar />
+      <UserMenu />
+    </div>
+    
 
+        <Routes>
+            <Route path='/' element={<Navigate to="/Home"/>}/>
+            <Route path='/home' element={<Home />} />
+        </Routes>
     </>
   )
 }
