@@ -7,16 +7,20 @@ import NavBar from './components/navBar';
 import SearchBar from './components/SearchBar';
 import Home from './pages/Home';
 import UserMenu from './components/UserMenu'
+import MenuBar from './components/MenuBar';
 
 function App() {
   
 
   return (
     <>
-    <div className='flex flex-row items-center p-6 bg-orange-400 rounded-lg'>
-      <NavBar />
-      <SearchBar />
-      <UserMenu />
+    <div>
+      <div className='flex flex-row items-center p-6 bg-orange-400 rounded-lg'>
+        <NavBar />
+        <SearchBar />
+        <UserMenu />
+      </div>
+      <MenuBar />
     </div>
     
 

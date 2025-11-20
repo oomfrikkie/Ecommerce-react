@@ -7,8 +7,8 @@ export default function navBar()
         <div className='flex flex-1'>
             <nav className='flex flex-row gap-5 text-xl'>
                 <Link to={'/home'} className='hover:bg-white hover:rounded-lg p-2'>Home</Link>
-                <Link>Dummy</Link>
-                <Link>Dummy</Link>
+                <Link to={'/home'} className='hover:bg-white hover:rounded-lg p-2'>Home</Link>
+                <Link to={'/home'} className='hover:bg-white hover:rounded-lg p-2'>Home</Link>
             </nav>
         </div>
 
